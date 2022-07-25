@@ -16,6 +16,10 @@ class Students:
         self.last = last
         self.fullname = first + " " + last
         self.email = first + last + "@stutern.com"
+
+    def email_add(self):
+        print(self.email)
+      
        
 stud_1 = (Students("Bukola", "Dare"))
 stud_2 = (Students("Temitope", "Balogun"))
@@ -23,13 +27,16 @@ stud_3 = (Students("Mariam", "Alade"))
 
 #print(stud_4.fullname)
 #print(stud_5.email)
+stud_1.email_add()
 
 class Group_leader(Students):
     def __init__(self):
 
-    studentList = []
-    studentList.append(Group_leader("Daniel", "Okon"))
-    studentList.append(Group_leader("John", "Doe"))
+# studentlist = []
+# studentlist.append(Group_leader("Daniel", "Okon"))
+# studentlist.append(Group_leader("John", "Doe"))
 
-    for student in studentList:
-        print('Name : {} {}'.format(student.first, student.last))
+# for student in studentlist:
+#     print('Name : {} {}'.format(student.first, student.last))
+
+#####tut
