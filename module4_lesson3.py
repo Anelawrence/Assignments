@@ -41,7 +41,6 @@ print("We have inserted", c.rowcount, "records to the table")
 
 c.execute("ALTER TABLE students_info ADD COLUMN course TEXT")
 
-#entry = [,, ]
 
 c.execute("UPDATE students_info SET course = 'Data Science';")
 
@@ -52,6 +51,10 @@ items = c.execute("SELECT * FROM students_info")
 print("FIRSTNAME" + "\t\t" + "SURNAME" + "\t\t\t" + "EMAIL" "\t\t\t\t" + "COURSE" "\n" f"{'-' * 100}")
 for i in items:
     print(i[0] + "\t\t\t" + i[1] + "\t\t\t" + i[2] + "\t\t" + i[3])
+
+conn.commit()
+conn.close()
+
 
 
 
