@@ -11,14 +11,11 @@
 # • Print the email of the instances of your subclass.
 
 class Students:
-    def __init__(self, first, last):
+    def __init__(self, first, last, student=[]):
         self.first = first
         self.last = last
         self.fullname = first + " " + last
         self.email = first + last + "@stutern.com"
-
-    def email_add(self):
-        print(self.email)
       
        
 stud_1 = (Students("Bukola", "Dare"))
@@ -30,7 +27,15 @@ stud_3 = (Students("Mariam", "Alade"))
 stud_1.email_add()
 
 class Group_leader(Students):
-    def __init__(self):
+    def __init__(self, first, last, student=[]):
+        self.student = student
+        super().__init__(first, last)
+
+    def add_student():
+        self.student.append(student)
+        
+
+
 
 # studentlist = []
 # studentlist.append(Group_leader("Daniel", "Okon"))

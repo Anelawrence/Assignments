@@ -1,0 +1,1 @@
+SELECT * FROM TABLE celebs LIMIT 5;
