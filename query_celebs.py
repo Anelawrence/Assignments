@@ -57,3 +57,6 @@ oldest_celeb()
 industry_legend() 
 minimun_album()
 popular_genre()
+
+conn.commit()
+conn.close()
