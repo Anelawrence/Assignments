@@ -3,7 +3,7 @@ import sqlite3
 conn = sqlite3.connect("weac.db")
 
 cursor = conn.cursor()
-print("created a cursor")
+print("created a cursor\n"f"{'='*100}")
 
 # Which student scored the highest in maths
 def highiest_in_maths():
@@ -82,3 +82,6 @@ best_overall()
 
 # Who is the best performing student across all nine subjects in term of average scores
 average_overall()
+
+conn.commit()
+conn.close()
