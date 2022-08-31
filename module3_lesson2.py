@@ -14,8 +14,28 @@ class Car:
         self.mileage = mileage
         self.chasis_no = chasis_no
 
-# creating first car
+    def car_name(self):
+        print(self.brand_name)
+
+    def car_colour(self):
+        print(self.colour)
+
+    def plate_no(self):
+        print(self.plate_number)
+
+    def car_mileage(self):
+        print (self.mileage)
+
+    def chasis(self):
+        print(self.chasis_no)
+
+
+# creating car instances
 car1 = Car("Jeep", "Black", "LA875JK", 7905, "AO65706")
-print(car1.brand_name)
-print(car1.colour)
-print(car1.dash_board)
+
+car2 = Car("Toyota", "Red", "FR676GH", 5777, "GF66690")
+
+car1.car_name()
+car1.car_mileage()
+car2.car_name()
+car2.car_colour()
