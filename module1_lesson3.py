@@ -1,10 +1,10 @@
 # "Exponential Calculator"
 print("Exponential Calculator")
-x = int(input())
-y = int(input())
+x = int(input('Enter a number: '))
+y = int(input('Enter it power: '))
 
-x = x ** y
+z = x ** y
 if y == 0:
     print("x =", 1)
 else:
-    print("x =",x)
+    print(f"{x} exponential {y} is:",z)
